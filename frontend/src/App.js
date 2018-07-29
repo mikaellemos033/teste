@@ -172,7 +172,9 @@ export default class App extends Component {
               handleCreate={this.showForm} />
 
           	<div className='app-infos' style={style}>
-              {this.childrenRender()}
+              <div className='app-box'>
+                {this.childrenRender()}
+              </div>
           	</div>
           </section>
 

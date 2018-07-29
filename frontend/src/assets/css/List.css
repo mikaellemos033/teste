@@ -4,6 +4,7 @@
 }
 
 .list li {
+	color: #ffffff;
 	border-bottom: 2px solid gray;	
 	box-sizing: border-box;
 	cursor: pointer;
