@@ -1,0 +1,23 @@
+.search {
+	background: #1a2533;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 10px 20px;
+	width: 100%;
+}
+
+.search button {
+	margin-left: 20px;
+}
+
+.search input {
+	box-sizing: border-box;
+	border: 2px solid #ffffff;
+	border-radius: 3px;
+	background: transparent;
+	color: #ffffff;
+	font-size: 16px;
+	padding: 0 10px;
+	width: 100%;
+}

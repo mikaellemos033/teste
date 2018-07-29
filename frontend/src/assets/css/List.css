@@ -1,0 +1,18 @@
+.list {
+	list-style: none;
+	padding: 30px;
+}
+
+.list li {
+	border-bottom: 2px solid gray;	
+	box-sizing: border-box;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	padding: 0 20px 10px;
+}
+
+.list li div:nth-last-child(1) {
+	text-align: right;
+}

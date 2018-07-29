@@ -1,0 +1,27 @@
+version: '3'
+services:
+  db: 
+    image: mongo
+    ports:
+      - 27017:27017
+      - 27018:27018
+  frontend:
+    image: node:8
+    volumes:
+      - ./frontend:/app
+    ports:
+     - 3000:3000
+    working_dir: /app
+    command: bash -c "npm i; npm start"
+    depends_on:
+      - app
+  app:
+    image: node:8
+    depends_on:
+      - db
+    volumes:
+      - ./backend:/app
+    working_dir: /app
+    ports:
+      - 7000:7000
+    command: bash -c 'npm i; npm run dev'
