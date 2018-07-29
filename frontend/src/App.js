@@ -12,7 +12,7 @@ import './assets/css/Search.css'
 import './assets/css/Form.css'
 import './assets/css/List.css'
 
-const URL = 'http://192.168.99.100:7000/api/cars'
+const URL = 'http://localhost:7000/api/cars'
 
 export default class App extends Component {
 
